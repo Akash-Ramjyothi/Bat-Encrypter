@@ -1,7 +1,7 @@
 <h1 align="center">Bat - Encrypter</h1>
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/54114888/132259623-e4477421-868f-48f3-a929-675fe26554b8.png" width="180" height="180">
+<img src="https://user-images.githubusercontent.com/54114888/132259623-e4477421-868f-48f3-a929-675fe26554b8.png" width="240" height="180">
 </p>
 
 ## 📜 Description:
@@ -10,7 +10,7 @@ The project Bat-Encrypter is an Authentication system supported with Password En
 ### NOTE: The encryption and decryption can only be seen through the Console Logs.
 
 ## 📽 Sample Demo:
-
+https://user-images.githubusercontent.com/54114888/132260274-1ed9ddcf-d922-4987-b988-a5aca4a6eab2.mp4
 
 ## 🌎 Deployed Website:
 https://bat-encrypter.netlify.app/
