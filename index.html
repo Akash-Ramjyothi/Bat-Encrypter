@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://1000logos.net/wp-content/uploads/2021/04/Batman-Logo.png" />
+    <title>Bat-Encrypter</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/pbkdf2.js"></script>
+</head>
+<body>
+    <div class="login">
+        <figure class="avatar">
+          <img src="https://1000logos.net/wp-content/uploads/2021/04/Batman-Logo.png" alt="Avatar" class="avatar__image" width="100" height="60">
+          <figcaption class="avatar__name" style="font-size:30px;">Bat - Encrypter</figcaption>
+        </figure>
+        <form class="form">
+          <div class="input">
+            <labe class="input__label">Email</labe>
+            <input type="email" class="input__email" id="userEmail" placeholder="me@mail.com">
+          </div>
+          <div class="input">
+            <labe class="input__label">Password</labe>
+            <input type="password" class="input__password" id="userPassword" placeholder="····">
+          </div>
+        </form>
+        <button class="form__button" onclick="encrypt();">Log in</button>
+      </div>  
+
+      <button id="hello" onclick="sourceCode();">Source Code</button>
+
+      <script>
+
+function encrypt() {
+    var inputEmail = document.getElementById("userEmail").value;
+    var input = document.getElementById("userPassword").value;    
+
+    console.log("User Email ID:",inputEmail);
+    console.log("User Password:",input);
+
+    // Encryption
+    var encrypted=CryptoJS.AES.encrypt(input, "secret-key").toString()
+
+    // Decryption
+    var decrypted=CryptoJS.AES.decrypt(encrypted, "secret-key").toString(CryptoJS.enc.Utf8)
+    
+        console.log("Encrypted Password: "+ encrypted)
+        console.log("Decrypted Value: "+ decrypted)
+}
+
+function sourceCode() {
+    window.location.href = 'https://github.com/Akash-Ramjyothi/Bat-Encrypter';
+}
+
+        /* 
+        var encrypted=CryptoJS.AES.encrypt("Akash", "secret-key").toString()
+        var decrypted=CryptoJS.AES.decrypt(encrypted, "secret-key").toString(CryptoJS.enc.Utf8)
+    
+        console.log("Encrypted: "+ encrypted)
+        console.log("Decrypted: "+ decrypted)
+        */
+    
+    </script>
+
+</body>
+</html>
