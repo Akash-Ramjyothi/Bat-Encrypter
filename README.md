@@ -9,6 +9,9 @@ The project Bat-Encrypter is an Authentication system supported with Password En
 
 ### NOTE: The encryption and decryption can only be seen through the Console Logs.
 
+## 🌳 Social-Welfare Usecase:
+The Bat-Encrypter helps protect private information, sensitive data, and can enhance the security of communication between client apps and servers. In essence, when your data is encrypted, even if an unauthorized person or entity gains access to it, they will not be able to read it.
+
 ## 📽 Sample Demo:
 https://user-images.githubusercontent.com/54114888/132260274-1ed9ddcf-d922-4987-b988-a5aca4a6eab2.mp4
 
